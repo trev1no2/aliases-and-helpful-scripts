@@ -3,15 +3,18 @@ alias ..='cd ..'
 alias aliases='vim ~/.aliases'
 alias ls='ls --color=auto'
 
-# Paths
-#alias ws=''
+# Paths, update when actually in use
+alias home='~'
+#alias ws='' #ws meaning workspace, where you're actively working in
 
-# Git 
+# (lazy) Git 
 #alias push='git push -u origin HEAD'
 #alias gs='git status'
 #alias gl='git log'
 
-PROMPT_DIRTRIM=1
+PROMPT_DIRTRIM=3 #useful for really, really long paths
+
+# Print ls after each cd 
 altercd() {
     cd() {
         unset -f cd
