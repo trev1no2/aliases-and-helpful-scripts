@@ -1,3 +1,4 @@
+# Credit to https://www.geeksforgeeks.org/using-github-with-ssh-secure-shell/
 ssh-keygen -t rsa -b 4096 -C "jmt2235@columbia.edu"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
