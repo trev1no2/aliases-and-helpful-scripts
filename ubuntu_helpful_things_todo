@@ -1,0 +1,5 @@
+Ubuntu 18.04:
+    1. Ensure bridged connection
+    2. sudo apt-get install vim
+ 
+NVIDIA SDK Manager

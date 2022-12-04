@@ -24,3 +24,7 @@ altercd() {
 function tree() {
         ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//──/g' -e 's/─/├/' -e '$s/├/└/'
 }
+
+:'
+sudo apt-get install -Y build-essential bc python bison flex libelf-dev libssl-dev libncurses-dev dwarves
+'
