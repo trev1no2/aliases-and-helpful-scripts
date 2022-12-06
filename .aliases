@@ -27,3 +27,7 @@ altercd() {
 function tree() {
         ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//──/g' -e 's/─/├/' -e '$s/├/└/'
 }
+
+:'
+make -j$(nproc) Image && make -j$(nproc) dtbs && make -j$(nproc) modules && sudo make modules install
+'
